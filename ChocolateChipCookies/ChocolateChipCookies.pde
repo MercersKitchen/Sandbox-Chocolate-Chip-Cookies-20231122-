@@ -18,8 +18,7 @@ void setup() {
   //Output #3: Console confirms dimension sizes (smaller and larger)
   //Output #4: if error with any of above, program will exit or be broken
   //           Hint: "Bru, turn your phun."
-  //
-  
+  //End Display Orientation
   //
 } //End setup
 //
