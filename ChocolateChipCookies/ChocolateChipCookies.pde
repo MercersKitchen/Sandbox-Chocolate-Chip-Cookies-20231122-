@@ -4,7 +4,11 @@
 //
 //Global Variables
 //
-void setup() {} //End setup
+void setup() {
+  size(600, 400);
+  appWidth = width; //displayWidth
+  appHeight = height; //displayHeight
+} //End setup
 //
 void draw() {} //End draw
 //
