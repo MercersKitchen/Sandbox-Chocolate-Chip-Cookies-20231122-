@@ -19,7 +19,8 @@ void setup() {
     println("CANVAS fits in DISPLAY GEOMETRY");
     println("Display Dimension:", "width:"+width, "height:"+height, "Display Width:"+displayWidth, "Display Height:"+displayHeight );
   } else {
-    println("");
+    println("CANVAS is too BIG, make it smaller");
+    exit();
   }
   //Output #2: Console confirms display orientation
   //Output #3: if error with any of above, program will exit or be broken
