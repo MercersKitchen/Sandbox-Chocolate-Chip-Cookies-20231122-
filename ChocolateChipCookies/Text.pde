@@ -14,19 +14,18 @@ void textSetup() {
   // Tools / Create Font / Find Font / Do not press "OK", known bug
 } //End Text Setup
 //
-void precodeText() {
-  fill(purple); //Ink, hexidecimal copied from Color Selector
+void precodeText() { //Note: to change ink and alignments, copy line and rewrite the values
+  fill(purple); //Ink for Entire Program
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
 } //End Pre Code Text
 //
 void splashScreenText() {
+  precodeText();
   size = 18; //Change the number until it fits
   textFont(harrington, size); 
-  
   text( spaceBar, ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
   //noFill();
-  
   fill(resetDefaultInk);
 } //End Splash Screen Text
 //
