@@ -17,6 +17,16 @@ void setup() {
   //Text Setup
   harrington = createFont("Harrington", 55); //Verify the font exists in Processing.Java
   //
+  //Population
+  float centerX=appWidth*1/2, centerY=appHeight*1/2;
+  ssSpaceBarX = centerX - ssSpaceBarWidth*1/2;
+  ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
+  ssSpaceBarWidth = appWidth*1/2;
+  ssSpaceBarHeight = appHeight*1/10;
+  //
+  //DIVs
+  //Layout our text space and typographical features
+  rect( ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
 } //End setup
 //
 void draw() {
