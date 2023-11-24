@@ -5,6 +5,7 @@
 //Global Variables
 int appWidth, appHeight, smallerDimension;
 Boolean OS_On=false;
+PFont harrington;
 //
 void setup() {
   size(600, 400);
@@ -12,6 +13,9 @@ void setup() {
   appHeight = height; //displayHeight
   //
   displayAlgorithm();
+  //
+  //Text Setup
+  harrington = createFont("Harrington", 55); //Verify the font exists in Processing.Java
   //
 } //End setup
 //
