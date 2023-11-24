@@ -16,7 +16,7 @@ void setup() {
   displayAlgorithm();
   textSetup(); //See Text
   //
-  //Population
+  //Population, eventually move this to a new SubProgram (TAB)
   float centerX=appWidth*1/2, centerY=appHeight*1/2;
   ssSpaceBarWidth = appWidth*1/2;
   ssSpaceBarHeight = appHeight*1/10;
