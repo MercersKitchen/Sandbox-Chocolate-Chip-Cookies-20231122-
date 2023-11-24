@@ -6,6 +6,7 @@
 int appWidth, appHeight, smallerDimension;
 Boolean OS_On=false;
 PFont harrington;
+float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
 //
 void setup() {
   size(600, 400);
@@ -19,14 +20,14 @@ void setup() {
   //
   //Population
   float centerX=appWidth*1/2, centerY=appHeight*1/2;
-  ssSpaceBarX = centerX - ssSpaceBarWidth*1/2;
-  ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
   ssSpaceBarWidth = appWidth*1/2;
   ssSpaceBarHeight = appHeight*1/10;
+  ssSpaceBarX = centerX - ssSpaceBarWidth*1/2;
+  ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
   //
   //DIVs
   //Layout our text space and typographical features
-  rect( ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
+  //rect( ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight );
 } //End setup
 //
 void draw() {
