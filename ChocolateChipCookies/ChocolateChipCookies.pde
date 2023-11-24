@@ -14,9 +14,7 @@ void setup() {
   appHeight = height; //displayHeight
   //
   displayAlgorithm();
-  //
-  //Text Setup
-  harrington = createFont("Harrington", 55); //Verify the font exists in Processing.Java
+  textSetup(); //See Text
   //
   //Population
   float centerX=appWidth*1/2, centerY=appHeight*1/2;
