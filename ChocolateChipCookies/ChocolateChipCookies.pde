@@ -4,9 +4,10 @@
 //
 //Global Variables
 int appWidth, appHeight, smallerDimension;
-Boolean OS_On=false;
+Boolean OS_On=false, programStart=false;
 PFont harrington;
 float ssSpaceBarX, ssSpaceBarY, ssSpaceBarWidth, ssSpaceBarHeight;
+color resetColour=#FFFFFF, white=#FFFFFF;
 //
 void setup() {
   size(600, 400);
@@ -15,13 +16,8 @@ void setup() {
   //
   displayAlgorithm();
   textSetup(); //See Text
-  //
-  //Population, eventually move this to a new SubProgram (TAB)
-  float centerX=appWidth*1/2, centerY=appHeight*1/2;
-  ssSpaceBarWidth = appWidth*1/2;
-  ssSpaceBarHeight = appHeight*1/10;
-  ssSpaceBarX = centerX - ssSpaceBarWidth*1/2;
-  ssSpaceBarY = centerY - ssSpaceBarHeight*1/2;
+  population();
+  loadImagesSetup();
   //
   //DIVs
   //Layout our text space and typographical features
@@ -29,7 +25,8 @@ void setup() {
 } //End setup
 //
 void draw() {
-  if ( OS_On == true ) splashScreen();
+  if ( OS_On == true && programStart == false ) splashScreen();
+  if ( OS_On == true && programStart == true ) homeScreen();
 } //End draw
 //
 void mousePressed() {
@@ -37,6 +34,12 @@ void mousePressed() {
 } //End mousePressed
 //
 void keyPressed() {
+  if ( key==' ' ) programStart = true;
+  //
+  //Key Board Short Cuts
+  if ( key==CODED || keyCode==ESC ) exit();
+  if ( key=='Q' || key=='q' ) exit();
+  //
 } //End keyPressed
 //
 //End MAIN Program
