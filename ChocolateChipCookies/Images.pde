@@ -13,12 +13,14 @@ void backgroundRect() {
 void backgroundImage() {
   backgroundRect();
   //Tint Code: brightness, night mode
-  image( backGroundImage, );
+  image( backGroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
 } //End Background Image
 //
 void loadImagesSetup() {
   //Review of Strings for Pathways and Files
-  backgroundImage=loadImage("../Images/thick-chocolate-chip-cookies-recipe-14-scaled.jpg");
+  String Pathway = "../Images/";
+  String cookieImage = "thick-chocolate-chip-cookies-recipe-14-scaled.jpg";
+  backGroundImage=loadImage(Pathway + cookieImage);
 } //End Load Image
 //
 //End Images Main
